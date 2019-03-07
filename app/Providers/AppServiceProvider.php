@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace HANA\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
