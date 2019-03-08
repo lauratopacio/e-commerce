@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>HANA| Princial</title>
-	  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/boostrap.min.4.3.1.js"></script>
-    <link href="css/3.0.0.boostrap.min.css" rel="stylesheet">
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/boostrap.min.3.0.0.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <link rel="stylesheet" type="text/css" href="css/principal.css">
-</head>
-<body>
-  @extends(layout.layouts)
- <br>
+@extends(layout.layouts)
+
+
+@section('content')
+{{-- este será el contenido din{amico que te mencionaba en el layout es lo del yield section --}}
  <div id="content">
  	<div class="contenedor">
  		<img src="images/principal/banner.png" id="im">
@@ -58,6 +44,12 @@
 	 	</div>
     </div>
  </div>
+
+
+
+
+
+ {{-- observación, esto lo puedes agregar en otra partial e incluirlo aquí con include y así lo puedes estar reutilizando en la página que necesites  --}}
 
 <!--   CARRUCEL--> 
  <div class="row">
@@ -149,6 +141,7 @@
         </div>
     </div>
     </div>
+
 <!--   CARRUCEL--> <br> <br> 
  </div>
  <br> <br> <br>
@@ -193,5 +186,6 @@ $(document).ready(function() {
 </script>
 
 
-</body>
-</html>
+
+@stop 
+{{-- marca el final de lo que irá en el content --}}

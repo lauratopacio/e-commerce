@@ -9,9 +9,6 @@
                 <a class="dropdown-item" href="#">CONTÁCTANOS</a>
               </center>
             </div>
-
-
-      
      </div>
    </div>
   <div class="col-md-4" ><center><img src="iconos/LOGO.png" id="logo"></center></div>
